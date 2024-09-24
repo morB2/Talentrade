@@ -1,0 +1,165 @@
+ @font-face {
+  font-family: 'Suez One';
+  src: url('fonts/SuezOne-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+} 
+
+@font-face {
+  font-family: 'Montserral';
+  src: url('fonts/Montserrat-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.home-container {
+  font-family: 'Suez One', serif;
+  overflow-x: hidden;
+  background-color: white;
+}
+
+.home-header {
+  display: grid;
+  grid-template-areas:
+    'menu right right right right right'
+    'menu footer footer footer footer footer';
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: -4%;
+  margin-top: 3%;
+  padding-right: 5%;
+  z-index: 10;
+  text-align: center;
+  border: 5px dashed black;
+  border-right: none;
+  border-radius: 30px;
+}
+
+.home-header a {
+  font-size: x-large;
+  color: black;
+  text-decoration: none;
+}
+
+.home-header a:hover {
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+}
+
+.home-header p {
+  line-height: 1.6;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  transition: transform 0.3s ease-in-out, text-shadow 0.3s ease-in-out;
+}
+
+.home-header p:hover {
+  transform: scale(1.1);
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+.flex-category {
+  display: flex;
+  flex-direction: column;
+}
+
+.category-item {
+  position: relative;
+  max-width: 80%;
+  border: 5px solid rgb(0, 0, 0);
+  border-radius: 50px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 7%;
+  padding: 0;
+  font-family: 'Montserral', serif;
+}
+
+.category-video video {
+  width: 100%;
+  height: auto;
+}
+
+.category-text {
+  text-align: center;
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 20px;
+  line-height: 1.5;
+  font-size: 18px;
+  color: black;
+}
+
+.category-item:nth-child(odd) {
+  align-self: flex-start;
+  margin-left: -6%;
+}
+
+.category-item:nth-child(even) {
+  align-self: flex-end;
+  flex-direction: row-reverse;
+  margin-right: -6%;
+}
+
+/* עיצוב תגובתי למסכים קטנים */
+@media (max-width: 768px) {
+  .category-item {
+    
+    border-radius: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    align-self: center;
+    flex-direction: column;
+  }
+
+  .category-video {
+    width: 100%;
+  }
+
+  .category-text {
+    padding: 10px;
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .category-item h3 {
+    font-size: 20px;
+  }
+
+  .category-item p {
+    font-size: 14px;
+  }
+
+  .flex-category {
+    flex-direction: column;
+    align-items: center;
+  }
+
+.category-item:nth-child(even) {
+  flex-direction:column;
+  align-self: self-start;
+  margin: 2%;
+}
+
+.category-item:nth-child(odd) {
+  flex-direction:column;
+  align-self: self-start;
+  margin: 2%;
+}
+
+.home-header {
+  align-items: center;
+  border: none;
+  margin-top: 15%;
+  display: inline-table;
+  max-width: fit-content;
+}
+ .home-container h2{
+  margin-left: 3%;
+  color: navy;
+}
+}

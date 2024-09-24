@@ -1,0 +1,43 @@
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: white;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+
+
+input,
+button {
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+textarea{
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+button {
+  background-color: #007BFF;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}

@@ -1,0 +1,46 @@
+.request-service-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.request-service-form {
+  width: 100%;
+  max-width: 600px;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.request-service-form h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.request-service-form input,
+.request-service-form textarea,
+.request-service-form button {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.request-service-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.request-service-form button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.request-service-form button:hover {
+  background-color: #0056b3;
+}

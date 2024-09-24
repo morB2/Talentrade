@@ -1,0 +1,106 @@
+/* ServiceDetails.css */
+
+.service-details-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 2px solid pink;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: black;
+  margin-bottom: 20px;
+}
+
+.service-owner {
+  font-style: italic;
+  color: gray;
+}
+
+.editable-input,
+.editable-textarea,
+.editable-select {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.editable-input:focus,
+.editable-textarea:focus,
+.editable-select:focus {
+  border-color: pink;
+  outline: none;
+}
+
+.editable-textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.subcategory-option {
+  margin-bottom: 10px;
+}
+
+.checkbox-input {
+  margin-right: 5px;
+}
+
+.action-buttons {
+  margin-top: 20px;
+}
+
+.action-button {
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-right: 10px;
+}
+
+.save-button {
+  background-color: pink;
+}
+
+.edit-button {
+  background-color: black;
+}
+
+.delete-button {
+  background-color: red;
+}
+
+.save-button:hover {
+  background-color: darkpink;
+}
+
+.edit-button:hover {
+  background-color: #333;
+}
+
+.delete-button:hover {
+  background-color: darkred;
+}
+
+.link {
+  color: pink;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: black;
+}
+@media (max-width: 768px) {
+  .service-details-container {
+    margin-top: 50%;
+  }
+}

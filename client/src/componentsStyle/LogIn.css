@@ -1,0 +1,93 @@
+/* LogIn.css */
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.login-container {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 20px;
+  border: 2px solid pink;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-header {
+  text-align: center;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-input {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-input:focus {
+  border-color: pink;
+  outline: none;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.login-button {
+  padding: 10px;
+  font-size: 18px;
+  color: black;
+  background-color: pink;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: black;
+  color: white;
+}
+
+.register-text {
+  text-align: center;
+}
+
+.register-link {
+  color: pink;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.register-link:hover {
+  color: black;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .login-container {
+    width: 90%;
+    margin: 50px auto;
+  }
+
+  .login-input {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .login-button {
+    font-size: 16px;
+  }
+}

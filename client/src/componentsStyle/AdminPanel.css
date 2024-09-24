@@ -1,0 +1,59 @@
+/* src/componentsStyle/AdminPanel.css */
+
+.admin-panel {
+  padding: 20px;
+}
+
+.admin-panel h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 5%;
+}
+
+.admin-panel section {
+  margin-bottom: 30px;
+}
+
+.admin-panel ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.admin-panel li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.admin-panel button {
+  background-color: #ff4d4d;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.admin-panel button:hover {
+  background-color: #ff1a1a;
+}
+
+.all-user {
+  list-style-type: none;
+  padding: 0;
+}
+
+.all-user li {
+  border: 1px solid #ccc; /* מסגרת מסביב לכל משתמש */
+  margin-bottom: 10px; /* רווח בין המשתמשים */
+  padding: 15px; /* ריווח פנימי */
+  border-radius: 5px; /* פינות מעוגלות */
+  background-color: #f9f9f9; /* צבע רקע */
+}
+
+.all-user li div {
+  float: right;
+  padding: 2%;
+}
+.all-user li:hover {
+  background-color: #e0e0e0; /* צבע רקע על מעבר עכבר */
+}

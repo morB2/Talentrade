@@ -1,0 +1,36 @@
+/* styles.css */
+.comments-section {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.comment {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+}
+
+.comment p {
+  margin: 5px 0;
+}
+
+
+.like-button.liked {
+  background: none;
+  color: black;
+}
+
+.like-button.unliked {
+  background: none;
+  color: gray;
+}
+
+.like-button {
+  border: none;
+  background: none;
+  outline: none;
+  padding: 0;
+}

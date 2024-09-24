@@ -1,0 +1,158 @@
+body {
+  font-family: 'Suez One', sans-serif;
+  background-color: #f3f4f6;
+  /* margin: 5%; */
+  padding: 0;
+}
+
+/* כותרות */
+.page-title {
+  color: #000;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 5%;
+}
+
+/* סינון וחיפוש */
+.filters {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  float: left;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.search-input
+{
+ font-weight: bold;
+}
+.search-input,
+.sort-select {   
+  padding: 5px;
+  border: 2px solid #000;
+  border-radius: 50px;
+  width: 200px;
+  background-color: black;
+  color: white;
+  font-family: 'Suez One', serif;
+}
+
+.sort-select {
+  width: 150px;
+  margin-bottom: 5%;
+}
+
+.filter-type {
+  display: flex;
+  align-items: center;
+}
+
+.filter-type label {
+  margin-right: 10px;
+  font-size: 1rem;
+  color: #000;
+  cursor: pointer;
+}
+
+.filters input[type="radio"] {
+  margin-right: 5px;
+}
+
+.filters input[type="radio"]:checked + label {
+  font-weight: bold;
+  color: #ff0099;
+}
+
+.subcategory-filter {
+  float: left;
+  display: flex;
+  flex-direction: column;
+}
+
+.subcategory-option {
+  margin-right: 15px;
+  margin-bottom: 5px;
+}
+
+/* רשימת השירותים */
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  list-style-type: none;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-item {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 15px;
+  margin: 10px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+#image {
+  flex: 0 0 70%;
+  /* background-image: url('/picture.jpg'); */
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px 15px 0 0;
+}
+
+.service-details {
+  flex: 1;
+  padding: 1px;
+  box-sizing: border-box;
+}
+
+.service-title {
+  font-size: small;
+  color: #000;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+}
+
+.service-compensation {
+  font-size: 1.25rem;
+  color: #000;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+}
+
+.view-details-link {
+  font-size: 1rem;
+  color: #ff0099;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.service-item:hover {
+  transform: scale(1.05);
+}
+
+/* קישור לעמודי שירות */
+.view-details-link:hover {
+  text-decoration: underline;
+}
+
+/* סגנונות מתקדמים */
+.category-page {
+  padding: 20px;
+}
+@media (max-width: 480px) {
+  .filters {  float:none;}
+  body{
+    margin-top:10% ;
+  }
+}

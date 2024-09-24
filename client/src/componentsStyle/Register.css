@@ -1,0 +1,92 @@
+/* Register.css */
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 20px;
+  border: 2px solid pink;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: black;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.registerInput {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.registerInput:focus {
+  border-color: pink;
+  outline: none;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 5px;
+  color: black;
+  background-color: pink;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+.p_link {
+  text-align: center;
+}
+
+.link {
+  color: pink;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: black;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    margin: 50px auto;
+  }
+
+  .registerInput {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  button {
+    font-size: 16px;
+  }
+}

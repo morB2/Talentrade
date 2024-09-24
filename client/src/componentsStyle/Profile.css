@@ -1,0 +1,114 @@
+.profilePage {
+  overflow: hidden;
+  /* background-image:url('../videos/2.png') ;
+  background-size: cover; */
+
+}
+
+.profile-container {
+  max-width: 400px;
+  color: black;
+  position: absolute;
+  right: 15%;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 5%;
+
+}
+
+ .half-circle {
+  position: absolute;
+  top: -20%;
+  left: -32%;
+  width: 90%;
+  height: 130%;
+   background-image:url('JOIN US (2).png') ;
+  background-size: cover;
+  background-position:right; 
+  /* background-color: #A9078E;   */
+  clip-path: ellipse(40% 50%);
+} 
+
+.profile-header {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-left: 35%;
+  margin-bottom: 5%;
+}
+
+
+.profile-details {
+  overflow: auto; 
+  max-height: 70vh; 
+}
+
+#profile-picture {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  border-radius: 50%;
+}
+
+.profile-name {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 10px 0 5px;
+}
+
+.contact-button {
+  display: inline-block;
+  background-color: black;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+.profile-button{
+  border: 1px solid #000000;
+  border-radius: 20px;
+  background-color: #ffffff;
+  /* background-color: #000000; */
+}
+.profile-button:hover{
+  background-color: #dbdbdb;
+  color: #000000;
+}
+
+#done {
+  width: 100px;
+  border-radius: 20px;
+  margin-left: 35%;
+  background-color: #9cbdbe;
+}
+#link-to-service{
+    color: #000000;
+}
+#link-to-service:hover{
+  color:burlywood;
+}
+
+.contact-button:hover {
+  background-color: none;
+}
+
+.delete-account-button {
+  background-color: #ff4d4f;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.delete-account-button:hover {
+  background-color: #ff7875;
+}
+
+@media (max-width: 768px) {
+  .profile-container {
+    max-width: 100%;
+    right: 6%;
+    top: 10%;
+  }
+  .half-circle {visibility:hidden;}
+}

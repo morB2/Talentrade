@@ -26,8 +26,6 @@ Key Features:
 * Users can like comments, and those who received a service can rate the provider.
 * Three user types: regular user, guest (read-only), and admin (who can delete users and view reports).
 * JWT authentication ensures secure access.
-* E2E testing implemented.
-
 
 ### Built With
 
